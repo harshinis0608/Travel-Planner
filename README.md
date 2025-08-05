@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Travel Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Travel Planner** A beautifully designed, interactive Travel Planner built using React and CSS, made to help users plan their trips efficiently with features like destination tracking, budget estimation, to-do and shopping lists, transport modes, Google Maps integration, and PDF export.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Trip Date Selector
+- Select the date of your travel using a user-friendly date input field.
 
-### `npm test`
+### Destination Input with Google Maps Integration
+- Enter a destination and view the location directly on an embedded Google Map.
+- The map automatically updates based on the typed destination.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Things to Do & Things to Buy Lists
+- Add new items to your travel checklist.
+- Click on an item to mark it as completed.
+- Double-click an item to remove it from the list.
+- Two separate sections provided for managing both “Things to Do” and “Things to Buy”.
 
-### `npm run build`
+### Mode of Transportation Selector
+- Select your preferred mode of travel: Bike, Car, Flight, Train, etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Budget Estimation & Expense Details
+- Enter an estimated budget for your trip.
+- Add notes or break down expected expenses using a multi-line text area.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Export Planner to PDF
+- Users can download their complete travel plan as a PDF.
+- Implemented using `html2canvas` and `jsPDF`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React JS**: For building the user interface and handling state with `useState`.
+- **CSS**: For custom styling and layout design.
+- **Google Maps Embed API**: For displaying maps based on destination input.
+- **html2canvas** and **jsPDF**: For capturing the planner view and generating a downloadable PDF.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to Run the Project
 
-### Analyzing the Bundle Size
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/travel-planner.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 2. Navigate to the project directory
+cd travel-planner
 
-### Making a Progressive Web App
+# 3. Install project dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 4. Install additional required libraries
+npm install html2canvas jspdf
 
-### Advanced Configuration
+# 5. Start the development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Homepage
+![Homepage](homepage.png)
 
-### `npm run build` fails to minify
+### Filled Travel Plan + PDF Export in Action
+![Filled travel planner](filled-inputs.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
